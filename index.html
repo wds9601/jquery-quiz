@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JQuery Quiz</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>jQuery Quiz</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Quiz Time!</h1>
-  <!-- TODO: ADD YOUR HTML CODE HERE -->
-  
-  <!-- TODO: ADD JQUERY DEPENDENCY -->
-  <!-- TODO: ADD YOUR JS FILES -->
+    <h1 id="title">jQuery Quiz </h1>
+
+    <div id="container">
+        <div id="prompt">
+            What is the best Color?
+        </div>
+
+        <div id="answer1">
+            <p>Answer Text</p>
+            <input id="button1"class="answerButton" type="radio">
+        </div>
+
+        <div id="answer2">
+            <p>Answer Text</p>
+            <input id="button2"class="answerButton" type="radio">
+        </div>
+
+        <div id="answer3">
+            <p>Answer Text</p>
+            <input id="button3"class="answerButton" type="radio">
+        </div>
+
+        <div id="answer4">
+            <p>Answer Text</p>
+            <input id="button4"class="answerButton" type="radio">
+        </div>
+
+        <div id="score">
+            <p>Your Score is: </p>
+        </div>
+
+        <button type="button" id="submit">Submit</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
