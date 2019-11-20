@@ -24,7 +24,7 @@ let questions = [{
 
 let submits = 0
 let score = 0
-let userAnswer
+let userAnswer = []
 $('#prompt').text(questions[submits].prompt)
     $('#answer1 p').text(questions[submits].answers[0])
     $('#answer2 p').text(questions[submits].answers[1])
@@ -34,11 +34,15 @@ $('#prompt').text(questions[submits].prompt)
 $('#submit').click(() => {
     submits++
 
-    if ($('#button1').prop('checked', true)) {
-        //STORE AS USERANSWER ARRAY??
+    // if ($('#button1').prop('checked', true)) {
+    //     //STORE AS USERANSWER ARRAY??
+    //     ans = $('input[type="radio"]:checked')
+    //     console.log(ans)
+    //     userAnswer.map(ans)
+        
         //IF USER ANSWER === questions[submits].correctAnswerIndex
+    // }
     
-    }
     $('.answerButton').prop('checked', false)
     $('#prompt').text(questions[submits].prompt)
     $('#answer1 p').text(questions[submits].answers[0])
